@@ -1,0 +1,11 @@
+#!/usr/local/bin node
+const mock = {
+    data:"良少数据",
+    result:{
+        title:"你好吗》"
+    }
+}
+
+let json2ts = require("json2ts");
+let result = json2ts.convert(JSON.stringify(mock));
+console.log(result)
